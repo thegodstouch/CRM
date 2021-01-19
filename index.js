@@ -28,3 +28,6 @@ app.get('/', (req, res) =>
 app.listen(PORT, () =>
     console.log(`Your server is running on port ${PORT}`)
 );
+
+// serving static files
+app.use(express.static('public'))
